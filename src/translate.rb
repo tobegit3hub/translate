@@ -20,6 +20,11 @@ include PutsColor
 }
 '''
 
+def print_usage
+  puts_red "usage: translate <word>"
+  exit 0
+end
+
 def puts_translate(string)
   puts " >>> " + string
 end
@@ -53,5 +58,6 @@ end
 
 if __FILE__ == $0
   word = ARGV.first
+  print_usage unless word
   translate word
 end
