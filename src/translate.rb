@@ -36,13 +36,16 @@ def translate(word)
 
   puts_translate "<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<"
   puts_translate result["query"] + " " + result["translation"].join(", ")
-  puts_translate ""
+  if result["basic"] and result["basic"]["explain"]
     result["basic"]["explains"].each do |explain|
-    puts_translate explain
+      puts_translate explain
+    end
   end
   puts_translate ""
-  result["web"].each do |kv|
-    puts_translate kv["key"] + " " + kv["value"].join(", ")
+  if result["web"]
+    result["web"].each do |kv|
+      puts_translate kv["key"] + " " + kv["value"].join(", ")
+    end
   end
   puts_translate "<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<"
   
