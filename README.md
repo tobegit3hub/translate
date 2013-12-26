@@ -16,3 +16,6 @@ Command-line translate tool, supported by Youdao.
 
 ## Screenshot
 ![translate](https://raw.github.com/tobegit3hub/translate/master/screenshot/translate.png)
+
+After setting /usr/lib/command-not-found, you get this:  
+![translate_without_command](https://raw.github.com/tobegit3hub/translate/master/screenshot/translate_without_command.png)
