@@ -7,14 +7,17 @@
 </pre>  
 
 ## Introduction
+
 Command-line translate tool, supported by Youdao.
 
 ## Usage
+
 1. `make install`
 2. `translate "word"`
 3. or just `t "word"`
 
 ## Screenshot
+
 ![translate](https://raw.github.com/tobegit3hub/translate/master/screenshot/translate.png)
 
 After setting /usr/lib/command-not-found, you get this:  
