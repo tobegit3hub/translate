@@ -16,3 +16,4 @@ install:
 
 uninstall:
 	rm -f $(install_path)$(binary)
+	rm -f $(install_path)$(binary_alias)
