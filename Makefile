@@ -11,6 +11,7 @@ all:
 	echo "translate doesn't need to built. Run `make install` to install it."
 
 install:
+	gem install puts_color
 	install ./src/translate.rb $(install_path)$(binary)
 	install ./src/translate.rb $(install_path)$(binary_alias)
 
